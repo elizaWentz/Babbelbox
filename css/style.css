@@ -1,0 +1,412 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+html{
+    font-size:16px;
+}
+
+body{ 
+    color: white ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: hsl(0 0% 9%);
+}
+
+header{
+    display:flex;
+    justify-content: flex-start;
+    background-color: hsl(161 30.1% 67.5%);
+}
+
+header img{ 
+    padding: 0.8em 0.5em 0.5em 1em;
+    height: 4rem;
+    width: 6rem;
+}
+
+header ul{
+    display: flex;
+    flex-direction: row;
+
+    margin-left: 5em;
+    color: hsl(0 0% 100%);
+}
+
+header li{
+    padding: 2em 4em 1.5em 0;
+    list-style: none;
+}
+
+header a{
+    padding: 0.5em;
+    border-radius: 0.3em;
+    text-decoration: none;
+
+    color: hsl(0 0% 9%);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:1.2em;
+    transition: all 500ms ease;
+}
+
+header a:hover{ 
+    background:hsl(162, 45%, 87%);
+    padding: 1em; 
+}
+
+header a:focus{
+    background:hsl(54, 85%, 47%) ;
+}
+
+a:active{
+    background: hsl(54, 85%, 47%);
+}
+
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    text-align: center;
+    position: relative;
+    margin-bottom: 11.3em;
+}
+
+h1{
+    margin-top: 1.5em; 
+    font-size: 4rem; 
+    animation: zoom 1s ease-in-out;
+}
+
+@keyframes zoom{
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.8);
+    }
+    80% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+main p{
+    font-size: 1.25rem;
+    font-weight: 100;
+}
+
+img[src="images/camerafilm.png"]{
+    position: absolute;
+    top: 10%; 
+    left: 2%; 
+    width: auto;
+    height: auto;
+    max-width: 100%;
+}
+
+img[src="images/babbelbox.png"]{
+    position: absolute;
+    top: 40%; 
+    right: 5%;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+}
+
+
+
+h2{ 
+    text-align: left;
+    padding: 1em 0 0.5em 2.1em;
+
+    font-size: 3rem;
+}
+
+.indexarticle{ 
+    display: flex; 
+    flex-direction: column;
+
+    margin:0;
+    padding-bottom:4em;
+    width: 100%;
+
+    border-radius: 0%;
+    background-color: hsl(161 30.1% 67.5%);
+}
+
+.indexarticle:last-of-type{
+    background-color: transparent;
+    color:hsl(161, 47%, 77%);
+}
+
+.indexarticle:nth-of-type(2) p{
+    color: white;
+}
+
+.indexarticle p{ 
+    display: flex;
+    padding: 0.5em 0.5em 0.5em 5em;
+    max-width: 28em;
+
+    list-style: none;
+    color: hsl(0 0% 9%);
+    font-size: 1.3rem; 
+    font-weight: 540;
+}
+
+.indexarticle h3{
+    padding: 0.7em 0 0.7em 5em;
+    
+    color: white;
+    font-size: 1.3rem; 
+    font-weight: 600;
+}
+
+
+
+article a{
+    margin-left: 5em;
+    padding: 0.4em;
+
+    background: white;
+    color: hsl(161 30.1% 67.5%);
+    border-radius: 0.3em;
+    font-size: 1.3rem; 
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 300ms ease;
+}
+
+article a:hover{ 
+    background: hsl(165 15.8% 29.8%);
+    animation: blink 1s infinite;
+}
+
+@keyframes blink{
+    0%, 100% {
+        color: hsl(161 30.1% 67.5%);
+    }
+    50% {
+        color: hsl(54, 85%, 47%);
+    }
+}
+
+article a:focus{
+    background: hsl(54, 85%, 47%);
+}
+
+article form{
+    display:flex;
+    flex-direction: column;
+
+    margin-top:1em;
+    margin-left: 6em;
+    padding: 0.2em;
+
+    border-radius: 0.3em;
+    transition: all 500ms ease;
+}
+
+article input, footer input{
+    width: 20em;
+    padding: 0.7em;
+
+    border-radius: 0.3em;
+    border-style: solid;
+    border-color:white;
+    background:  hsl(161, 23%, 86%); 
+}
+
+input:focus::placeholder{
+    color:transparent;
+}
+
+input::placeholder{
+    color: hsl(165 15.8% 29.8%);
+    transition:color 0.3s ease;
+}
+
+input[type=submit]{
+    margin-top: 0.7em;
+    padding:0.5em;
+    width:6em;
+    
+    border:none;
+    color:hsl(164 20.4% 59.6%);
+    font-weight: 700;
+    font-size: 1rem;
+    background:white;
+
+    transition: all 500ms ease;
+}
+
+input:hover[type=submit]{
+    color: white;
+    background:hsl(165 15.8% 29.8%)
+}
+
+input:focus[type=submit]{
+    background: hsl(54, 85%, 47%); 
+}
+
+
+
+article{
+    display: flex;
+    align-items: flex-start;
+    
+    margin: 1em auto;
+    padding: 1em;
+    padding-top:0.2em;
+    width: 80%;
+    max-width: 100%;
+
+    border-radius: 12px;
+    gap:0.5em;
+    background-color: hsl(161 30.1% 67.5%);
+}
+
+figure{
+    max-width: 300px;
+}
+
+figure img{
+    max-width:100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+figcaption{
+    padding-bottom:0.2em;
+    padding-left:0.6em;
+    text-align:left;
+    font-size: 1em;
+    font-weight:600;
+    color:hsl(165 15.8% 29.8%);
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-top: 0.7em;
+    margin-left:0.5em;
+    width: 100%;
+    max-width: 700px;
+}
+
+section h3, section h4, section p{
+    margin: 0; 
+    padding: 0; 
+    text-align: left; 
+    line-height: 1.5;
+}
+
+section h3{
+    padding:0;
+
+    color: hsl(0 0% 9%);
+    font-size: 2rem; 
+    font-weight: 1000; 
+}
+
+section h4{
+    margin-top:-0.5em;
+
+    color: hsl(0 0% 9%);
+    font-size: 1.5rem; 
+    font-weight: 1000;
+}
+
+section p{
+    margin-top:1em;
+    width: 100%;
+    max-width: 700px;
+
+    color: hsl(0 0% 9%);
+    font-size: 0.9rem; 
+    font-weight: 500;
+}
+
+section a{
+    align-self: start;
+    margin-top:2em;
+    margin-left:0;
+    padding: 0.4em 1em; 
+}
+
+
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    text-align:center;
+
+    padding-top: 1em;
+    padding-bottom: 2em;
+    width: 100%;
+    background-color: hsl(161 30.1% 67.5%);
+}
+  
+footer section{
+    width: 30%;
+
+    font-weight: 500;
+    line-height: 3em;
+}
+
+footer h2{
+    padding:0;
+    text-align: center;
+
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:1.5em;
+    font-weight: 500;
+}
+
+footer ul,footer p{
+    padding:0;
+    text-align: center;
+    list-style: none;
+    font-style: normal;
+}
+
+footer ul li a{
+    max-width: 24px;
+    color: black;
+    transition: all 340ms ease;
+}
+
+footer a:hover{ 
+    color:white;
+}
+footer a:focus{
+    color:hsl(54, 85%, 47%); 
+    background: none;
+}
+
+footer section:last-child ul{
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+footer input[type=submit]{
+    width:8em;
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+
+@media (prefers-reduced-motion){
+    h1,article a:hover{
+        transition:none;
+        animation:none;
+    }
+}
